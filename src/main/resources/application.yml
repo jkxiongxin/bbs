@@ -1,20 +1,11 @@
 server:
   port: 8081
 spring:
-  security:
-    enable: false
   datasource:
     url: jdbc:mysql://localhost:3306/user
     username: xiongxin
     password: 214wochusheng
     driverClassName: com.mysql.jdbc.Driver
-    druid:
-      initial-size: 2
-      max-active: 8
-    jpa:
-      hibernate:
-        ddl-auto: update
-        show-sql: true
-        dialect: org.hibernate.dialect.MySQLInnoDBDialect
-        id:
-          new_generator_mappings: false
+  jpa:
+    hibernate:
+      ddl-auto: update

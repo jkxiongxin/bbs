@@ -2,8 +2,7 @@ package com.example.demo.jpa.model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -17,6 +16,8 @@ import java.sql.Timestamp;
 @Table(name = "comment")
 public class Comment {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String content;

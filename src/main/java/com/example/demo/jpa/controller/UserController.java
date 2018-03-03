@@ -26,8 +26,8 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> getUserByName(@RequestParam String name){
-        return userRepository.findByName(name);
+    public List<User> getUserByName(@RequestParam String nickname){
+        return userRepository.findByNickname(nickname);
     }
 
     @PostMapping

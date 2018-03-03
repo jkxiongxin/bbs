@@ -15,7 +15,7 @@ import java.util.List;
 @Repository
 public interface UserRepository extends PagingAndSortingRepository<User, Long> {
 
-    List<User> findByName(String name);
+    List<User> findByNickname(String nickname);
 
     List<User> findAll();
 

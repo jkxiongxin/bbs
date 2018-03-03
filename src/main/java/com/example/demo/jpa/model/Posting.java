@@ -1,7 +1,6 @@
 package com.example.demo.jpa.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.sql.Timestamp;
 
 /**
@@ -14,6 +13,8 @@ import java.sql.Timestamp;
 @Table(name = "posting")
 public class Posting {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private Timestamp createTime;

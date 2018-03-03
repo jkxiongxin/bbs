@@ -6,7 +6,10 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 /**
- * Created by Administrator on 2018/3/3 0003.
+ * 用户类
+ * date: Create on 下午 22:09 2018/3/3 0003
+ *
+ * @author 熊鑫(Sean)
  */
 @Data
 @Entity
@@ -21,6 +24,10 @@ public class User {
 
     private String password;
 
-    private String name;
+    private String nickname;
+
+    private Long role;
+
+    private String icon;
 
 }

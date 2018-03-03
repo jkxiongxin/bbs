@@ -8,7 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * Created by Administrator on 2018/3/3 0003.
+ * 用户控制器
+ * date: Create on 下午 22:09 2018/3/3 0003
+ *
+ * @author 熊鑫(Sean)
  */
 @RestController
 @RequestMapping("user")
